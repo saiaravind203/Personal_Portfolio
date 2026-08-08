@@ -197,7 +197,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="w-full min-h-[calc(100vh-65px)] px-6 py-14 lg:px-10 lg:py-20 flex items-center"
+      className="w-full min-h-[calc(100vh-65px)] overflow-hidden px-6 py-14 lg:px-10 lg:py-20 flex items-center"
     >
       <div className="mx-auto grid max-w-7xl gap-10 w-full lg:grid-cols-[1fr_1fr_1fr]">
         {/* Left column */}
@@ -246,7 +246,7 @@ function Hero() {
               <img
                 src={profilePhoto}
                 alt="Your Photo"
-                className="absolute left-1/2 top-[-72px] z-20 w-[205px] -translate-x-1/2 object-cover sm:w-[270px] sm:top-[-153px]"
+                className="absolute left-1/2 top-[-72px] z-20 w-[205px] -translate-x-1/2 object-cover sm:w-[270px] sm:top-[-153px] md:top-[-120px] xl:top-[-153px]"
               />
             </div>
           </div>
@@ -479,7 +479,7 @@ function Contact() {
           <h2 className="mt-2 font-display text-2xl font-semibold sm:text-3xl">
             Let's work together
           </h2>
-          <p className="mt-3 max-w-sm text-base text-gray-400">
+          <p className="mt-3 max-w-sm text-sm sm:text-base text-gray-400">
             Have a project in mind or a role to discuss? I'd like to hear about
             it.
           </p>
@@ -490,8 +490,8 @@ function Contact() {
               </div>
 
               <div className="min-w-0">
-                <p className="text-sm text-gray-500">Email</p>
-                <p className="text-base font-medium text-white break-words">
+                <p className="text-xs sm:text-sm text-gray-500">Email</p>
+                <p className="text-sm sm:text-base font-medium text-white break-words">
                   Naraharashettysaiaravind@gmail.com
                 </p>
               </div>
@@ -503,8 +503,8 @@ function Contact() {
               </div>
 
               <div className="min-w-0">
-                <p className="text-sm text-gray-500">Phone</p>
-                <p className="text-base font-medium text-white break-words">+91 7331121108</p>
+                <p className="text-xs sm:text-sm text-gray-500">Phone</p>
+                <p className="text-sm sm:text-base font-medium text-white break-words">+91 7331121108</p>
               </div>
             </div>
 
@@ -514,8 +514,8 @@ function Contact() {
               </div>
 
               <div className="min-w-0">
-                <p className="text-sm text-gray-500">Location</p>
-                <p className="text-base font-medium text-white break-words">
+                <p className="text-xs sm:text-sm text-gray-500">Location</p>
+                <p className="text-sm sm:text-base font-medium text-white break-words">
                   Hyderabad, Telangana, India
                 </p>
               </div>
@@ -527,8 +527,8 @@ function Contact() {
               </div>
 
               <div className="min-w-0">
-                <p className="text-sm text-gray-500">Availability</p>
-                <p className="text-base font-medium text-green-400">
+                <p className="text-xs sm:text-sm text-gray-500">Availability</p>
+                <p className="text-sm sm:text-base font-medium text-green-400">
                   Available for Full-Time
                 </p>
               </div>
@@ -536,8 +536,8 @@ function Contact() {
           </div>
         </div>
 
-        <form className="space-y-4" onSubmit={handleSubmit}>
-          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
+        <form className="space-y-4 w-full" onSubmit={handleSubmit}>
+          <div className="grid gap-4 sm:grid-cols-2">
             <input
               type="text"
               name="name"
@@ -617,14 +617,14 @@ function Contact() {
               )}
             </div>
 
-            <h3 className="mt-5 sm:mt-6 text-lg sm:text-xl font-semibold text-white break-words">
+            <h3 className="mt-5 sm:mt-6 text-base sm:text-lg font-semibold text-white break-words">
               {popup.success ? "Success!" : "Oops!"}
             </h3>
 
-            <p className="mt-3 text-base leading-6 text-gray-400 break-words">
+            <p className="mt-3 text-sm sm:text-base leading-6 text-gray-400 break-words">
               {popup.title && <span>{popup.title}</span>}
             </p>
-            <p className="mt-2 text-base leading-6 text-gray-400 break-words">
+            <p className="mt-2 text-sm sm:text-base leading-6 text-gray-400 break-words">
               {popup.message && <span>{popup.message}</span>}
             </p>
 
