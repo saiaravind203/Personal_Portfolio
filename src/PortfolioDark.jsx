@@ -480,8 +480,8 @@ function Contact() {
     formData.message.trim();
 
   return (
-    <section id="contact" className="mx-auto max-w-6xl px-6 pb-20 lg:px-10">
-      <div className="grid items-center gap-10 rounded-2xl border border-line bg-panel p-8 lg:grid-cols-2 lg:p-10">
+    <section id="contact" className="mx-auto max-w-6xl px-4 sm:px-6 pb-16 sm:pb-20 lg:px-10">
+      <div className="grid items-center gap-8 sm:gap-10 rounded-2xl border border-line bg-panel p-5 sm:p-8 lg:grid-cols-2 lg:p-10">
         <div>
           <p className="text-sm font-medium text-accent">Get in touch</p>
           <h2 className="mt-2 font-display text-2xl font-semibold sm:text-3xl">
@@ -492,49 +492,49 @@ function Contact() {
             it.
           </p>
           <div className="mt-6 space-y-5">
-            <div className="flex items-center gap-4">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10">
+            <div className="flex items-center gap-3 sm:gap-4">
+              <div className="flex h-10 w-10 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10">
                 <Mail className="h-5 w-5 text-accent" />
               </div>
 
-              <div>
+              <div className="min-w-0">
                 <p className="text-xs text-gray-500">Email</p>
-                <p className="text-sm font-medium text-white">
+                <p className="text-sm font-medium text-white break-words">
                   Naraharashettysaiaravind@gmail.com
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10">
+            <div className="flex items-center gap-3 sm:gap-4">
+              <div className="flex h-10 w-10 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10">
                 <Phone className="h-5 w-5 text-accent" />
               </div>
 
-              <div>
+              <div className="min-w-0">
                 <p className="text-xs text-gray-500">Phone</p>
-                <p className="text-sm font-medium text-white">+91 7331121108</p>
+                <p className="text-sm font-medium text-white break-words">+91 7331121108</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10">
+            <div className="flex items-center gap-3 sm:gap-4">
+              <div className="flex h-10 w-10 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10">
                 <MapPin className="h-5 w-5 text-accent" />
               </div>
 
-              <div>
+              <div className="min-w-0">
                 <p className="text-xs text-gray-500">Location</p>
-                <p className="text-sm font-medium text-white">
+                <p className="text-sm font-medium text-white break-words">
                   Hyderabad, Telangana, India
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10">
+            <div className="flex items-center gap-3 sm:gap-4">
+              <div className="flex h-10 w-10 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10">
                 <BriefcaseBusiness className="h-5 w-5 text-accent" />
               </div>
 
-              <div>
+              <div className="min-w-0">
                 <p className="text-xs text-gray-500">Availability</p>
                 <p className="text-sm font-medium text-green-400">
                   Available for Full-Time
@@ -545,14 +545,14 @@ function Contact() {
         </div>
 
         <form className="space-y-4" onSubmit={handleSubmit}>
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
             <input
               type="text"
               name="name"
               placeholder="Your name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full rounded-lg border border-line bg-panel2 px-4 py-3 text-sm text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
+              className="w-full min-w-0 rounded-lg border border-line bg-panel2 px-4 py-3 text-sm text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
             />
             <input
               type="email"
@@ -560,7 +560,7 @@ function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full rounded-lg border border-line bg-panel2 px-4 py-3 text-sm text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
+              className="w-full min-w-0 rounded-lg border border-line bg-panel2 px-4 py-3 text-sm text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
             />
           </div>
           <input
@@ -569,7 +569,7 @@ function Contact() {
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            className="w-full rounded-lg border border-line bg-panel2 px-4 py-3 text-sm text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
+            className="w-full min-w-0 rounded-lg border border-line bg-panel2 px-4 py-3 text-sm text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
           />
           <textarea
             rows={4}
@@ -577,7 +577,7 @@ function Contact() {
             value={formData.message}
             name="message"
             onChange={handleChange}
-            className="w-full resize-none rounded-lg border border-line bg-panel2 px-4 py-3 text-sm text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
+            className="w-full min-w-0 resize-none rounded-lg border border-line bg-panel2 px-4 py-3 text-sm text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
           />
           <button
             type="submit"
@@ -595,17 +595,17 @@ function Contact() {
         </form>
       </div>
       {popup.show && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
-          <div className="w-[90%] max-w-md rounded-2xl border border-line bg-panel p-8 text-center shadow-2xl">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
+          <div className="w-full max-w-md rounded-2xl border border-line bg-panel p-6 sm:p-8 text-center shadow-2xl max-h-[90vh] overflow-y-auto">
             <div
-              className={`mx-auto flex h-16 w-16 items-center justify-center rounded-full ${
+              className={`mx-auto flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-full ${
                 popup.success ? "bg-green-500/20" : "bg-red-500/20"
               }`}
             >
               {popup.success ? (
                 <svg
                   viewBox="0 0 24 24"
-                  className="h-8 w-8 text-green-500"
+                  className="h-7 w-7 sm:h-8 sm:w-8 text-green-500"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2.5"
@@ -615,7 +615,7 @@ function Contact() {
               ) : (
                 <svg
                   viewBox="0 0 24 24"
-                  className="h-8 w-8 text-red-500"
+                  className="h-7 w-7 sm:h-8 sm:w-8 text-red-500"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2.5"
@@ -625,14 +625,14 @@ function Contact() {
               )}
             </div>
 
-            <h3 className="mt-6 text-xl font-semibold text-white">
+            <h3 className="mt-5 sm:mt-6 text-lg sm:text-xl font-semibold text-white break-words">
               {popup.success ? "Success!" : "Oops!"}
             </h3>
 
-            <p className="mt-3 text-sm leading-6 text-gray-400">
+            <p className="mt-3 text-sm leading-6 text-gray-400 break-words">
               {popup.title && <span>{popup.title}</span>}
             </p>
-            <p className="mt-2 text-sm leading-6 text-gray-400">
+            <p className="mt-2 text-sm leading-6 text-gray-400 break-words">
               {popup.message && <span>{popup.message}</span>}
             </p>
 
@@ -643,7 +643,7 @@ function Contact() {
                   show: false,
                 })
               }
-              className="mt-8 w-full rounded-xl bg-accent py-3 font-medium text-white transition-all duration-300 hover:bg-orange-600"
+              className="mt-6 sm:mt-8 w-full rounded-xl bg-accent py-3 font-medium text-white transition-all duration-300 hover:bg-orange-600"
             >
               OK
             </button>
@@ -653,7 +653,6 @@ function Contact() {
     </section>
   );
 }
-
 function Footer() {
   return (
     <footer className="border-t border-line">
