@@ -246,7 +246,7 @@ function Hero() {
               <img
                 src={profilePhoto}
                 alt="Your Photo"
-                className="absolute left-1/2 top-[-75px] z-20 w-[240px] -translate-x-1/2 object-cover sm:w-[300px] sm:top-[-142px]"
+                className="absolute left-1/2 top-[-72px] z-20 w-[205px] -translate-x-1/2 object-cover sm:w-[270px] sm:top-[-153px]"
               />
             </div>
           </div>
