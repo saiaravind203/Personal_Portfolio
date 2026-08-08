@@ -1,5 +1,9 @@
 import { useState } from "react";
 import profilePhoto from "../Assets/my_image.png";
+import AravindResume from "../Assets/Aravind.pdf";
+import DevBlog from "../Assets/Dev_blog.png";
+import GameBlog from "../Assets/Game_blog.png";
+import PollyGlot from "../Assets/Polly_Glot.png";
 import emailjs from "@emailjs/browser";
 import { Mail, Phone, MapPin, BriefcaseBusiness } from "lucide-react";
 
