@@ -48,7 +48,7 @@ const PROJECTS = [
     stack: ["Next.js", "Tailwind", "Express.js"],
     description:
       "The platform allows developers to create, manage, and share technical blogs with features like authentication, Google login, AI-generated summaries, comments, a responsive mobile-first interface, and a clean, professional developer experience.",
-    image: "../Assets/Dev_blog.png",
+    image: DevBlog,
     github: "https://github.com/saiaravind203/Dev_Blog",
     wip: true,
   },
@@ -57,7 +57,7 @@ const PROJECTS = [
     stack: ["HTML", "CSS", "JavaScript", "Express.js", "SQLite3"],
     description:
       "The platform allows developers to create, manage, and share technical blogs with features like authentication, Google login, AI-generated summaries, comments, a responsive mobile-first interface, and a clean, professional developer experience.",
-    image: "../Assets/Game_blog.png",
+    image: GameBlog,
     github: "https://github.com/saiaravind203/GameBlog",
   },
   {
@@ -65,7 +65,7 @@ const PROJECTS = [
     stack: ["HTML", "CSS", "JavaScript", "Express.js", "OpenRouter API"],
     description:
       "AI Translation Platform is a modern full-stack AI-powered translation application where users can translate text in real time through an intuitive messenger-style interface, supporting multiple languages with fast, accurate AI translations and a seamless, responsive user experience.",
-    image: "./Assets/Polly_Glot.png",
+    image: PollyGlot,
     github: "https://github.com/your-handle/translation-studio",
   },
 ];
@@ -138,7 +138,7 @@ function Nav() {
           ))}
         </ul>
         <a
-          href="../Assets/Aravind.pdf" target="_blank" rel="noopener noreferrer"
+          href={AravindResume} target="_blank" rel="noopener noreferrer"
           className="hidden items-center gap-2 rounded-full border border-line px-4 py-2 text-xs font-medium text-white transition-colors duration-300 hover:border-accent hover:text-accent sm:flex"
         >
           <svg
