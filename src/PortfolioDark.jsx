@@ -114,10 +114,10 @@ function Nav() {
     <header className="sticky top-0 z-50 border-b border-line bg-bg/90 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <div className="flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent font-display text-sm font-bold text-white">
+          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent font-display text-base font-bold text-white">
             SA
           </div>
-          <span className="font-display text-sm font-semibold tracking-wide">
+          <span className="font-display text-base font-semibold tracking-wide">
             SAI ARAVIND
           </span>
         </div>
@@ -128,8 +128,8 @@ function Nav() {
                 href={link.href}
                 className={
                   i === 0
-                    ? "border-b-2 border-accent pb-1 text-sm font-medium text-white"
-                    : "text-sm text-gray-300 transition-colors duration-300 hover:text-accent"
+                    ? "border-b-2 border-accent pb-1 text-base font-medium text-white"
+                    : "text-base text-gray-300 transition-colors duration-300 hover:text-accent"
                 }
               >
                 {link.label}
@@ -139,7 +139,7 @@ function Nav() {
         </ul>
         <a
           href={AravindResume} target="_blank" rel="noopener noreferrer"
-          className="hidden items-center gap-2 rounded-full border border-line px-4 py-2 text-xs font-medium text-white transition-colors duration-300 hover:border-accent hover:text-accent sm:flex"
+          className="hidden items-center gap-2 rounded-full border border-line px-4 py-2 text-sm font-medium text-white transition-colors duration-300 hover:border-accent hover:text-accent sm:flex"
         >
           <svg
             viewBox="0 0 24 24"
@@ -178,8 +178,8 @@ function Nav() {
                   onClick={() => setOpen(false)}
                   className={
                     i === 0
-                      ? "block rounded-lg px-3 py-2.5 text-sm font-medium text-white"
-                      : "block rounded-lg px-3 py-2.5 text-sm text-gray-300 hover:text-accent"
+                      ? "block rounded-lg px-3 py-2.5 text-base font-medium text-white"
+                      : "block rounded-lg px-3 py-2.5 text-base text-gray-300 hover:text-accent"
                   }
                 >
                   {link.label}
@@ -202,7 +202,7 @@ function Hero() {
       <div className="mx-auto grid max-w-7xl gap-10 w-full lg:grid-cols-[1fr_1fr_1fr]">
         {/* Left column */}
         <div>
-          <p className="mb-3 text-sm text-accent">Hola! 👋</p>
+          <p className="mb-3 text-base text-accent">Hola! 👋</p>
           <p className="font-display text-2xl text-white">I'm</p>
           <h1 className="font-display text-4xl font-bold leading-tight sm:text-5xl">
             Sai <span className="gradient-name">Aravind</span>
@@ -211,7 +211,7 @@ function Hero() {
           <p className="mt-4 font-display text-xl text-gray-200">
             Full Stack Developer
           </p>
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-gray-400">
+          <p className="mt-4 max-w-sm text-base leading-relaxed text-gray-400">
             Full Stack & AEM Developer specializing in React.js, Adobe
             Experience Manager (AEM), Node.js, and modern web technologies.
             Passionate about AI, building scalable applications, and crafting
@@ -221,7 +221,7 @@ function Hero() {
           <div className="mt-6 flex flex-wrap gap-3">
             <a
               href="#contact"
-              className="flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-orange-600"
+              className="flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-base font-medium text-white transition-colors duration-300 hover:bg-orange-600"
             >
               Hire Me
               <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-current">
@@ -230,7 +230,7 @@ function Hero() {
             </a>
             <a
               href="#projects"
-              className="rounded-full border border-line px-5 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:border-accent hover:text-accent"
+              className="rounded-full border border-line px-5 py-2.5 text-base font-medium text-white transition-colors duration-300 hover:border-accent hover:text-accent"
             >
               View My Work
             </a>
@@ -254,19 +254,11 @@ function Hero() {
 
         {/* Right column (about) */}
         <div id="about" className="rounded-2xl border border-line bg-panel p-6">
-          <p className="font-display text-sm font-semibold text-accent">
+          <p className="font-display text-base font-semibold text-accent">
             About me
           </p>
-          <p className="mt-3 text-xs leading-relaxed text-gray-400">
-            I am a Full Stack & AEM Developer with 2+ years of experience at
-            Accenture, building enterprise digital experiences using Adobe
-            Experience Manager (AEM). I have developed custom AEM components,
-            responsive web applications, and worked on global multi-market
-            projects. Skilled in React.js, Tailwind CSS, HTML, CSS, JavaScript,
-            Node.js, and Express.js, I enjoy creating scalable and user-friendly
-            solutions. Passionate about AI and modern web technologies, I
-            continuously learn and build innovative applications while
-            collaborating in Agile teams to deliver high-quality software.
+          <p className="mt-3 text-sm leading-relaxed text-gray-400">
+            I am a Full Stack & AEM Developer with 2+ years of experience at Accenture, building enterprise digital experiences using Adobe Experience Manager (AEM). I have developed custom AEM components, responsive web applications, and worked on global multi-market projects. Skilled in React.js, Tailwind CSS, HTML, CSS, JavaScript, Node.js, and Express.js, I enjoy creating scalable, high-performance, and user-friendly solutions. Passionate about AI and modern web technologies, I continuously learn, explore emerging technologies, and build innovative applications while collaborating in Agile teams to deliver high-quality, efficient, and impactful software solutions.
           </p>
         </div>
       </div>
@@ -278,12 +270,12 @@ function ProjectsExperience() {
   const [tab, setTab] = useState("projects");
 
   return (
-    <section id="projects" className="mx-auto max-w-5xl px-6 pb-20 lg:px-10">
+    <section id="projects" className="mx-auto max-w-6xl px-6 pb-20 lg:px-10">
       <div className="flex justify-center gap-3">
         <button
           onClick={() => setTab("projects")}
           className={
-            "flex items-center gap-2 rounded-full px-6 py-2.5 text-sm font-medium transition-colors duration-300 " +
+            "flex items-center gap-2 rounded-full px-6 py-2.5 text-base font-medium transition-colors duration-300 " +
             (tab === "projects"
               ? "border border-accent text-accent"
               : "bg-panel2 text-gray-300 hover:text-white")
@@ -295,7 +287,7 @@ function ProjectsExperience() {
           onClick={() => setTab("experience")}
           id="experience"
           className={
-            "flex items-center gap-2 rounded-full px-6 py-2.5 text-sm font-medium transition-colors duration-300 " +
+            "flex items-center gap-2 rounded-full px-6 py-2.5 text-base font-medium transition-colors duration-300 " +
             (tab === "experience"
               ? "border border-accent text-accent"
               : "bg-panel2 text-gray-300 hover:text-white")
@@ -326,10 +318,10 @@ function ProjectsExperience() {
                   />
                 </div>
                 <div className="p-5">
-                  <p className="font-display text-sm font-semibold text-white">
+                  <p className="font-display text-base font-semibold text-white">
                     {p.name}
                   </p>
-                  <p className="mt-2 text-xs leading-relaxed text-gray-400">
+                  <p className="mt-2 text-sm leading-relaxed text-gray-400">
                     {p.description}
                   </p>
                   <div className="mt-3 flex flex-wrap gap-1.5">
@@ -346,7 +338,7 @@ function ProjectsExperience() {
                     href={p.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-4 flex items-center justify-center gap-2 rounded-full border border-line px-5 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:border-accent hover:text-accent"
+                    className="mt-4 flex items-center justify-center gap-2 rounded-full border border-line px-5 py-2.5 text-base font-medium text-white transition-colors duration-300 hover:border-accent hover:text-accent"
                   >
                     <svg
                       viewBox="0 0 24 24"
@@ -382,15 +374,15 @@ function ProjectsExperience() {
                             <p className="text-[11px] text-accent">
                               {exp.period}
                             </p>
-                            <p className="text-sm font-medium text-white">
+                            <p className="text-base font-medium text-white">
                               {exp.role}
                             </p>
                           </div>
                         </div>
-                        <p className="mt-2 text-xs font-medium text-accent">
+                        <p className="mt-2 text-sm font-medium text-accent">
                           {exp.org}
                         </p>
-                        <p className="mt-2 text-xs leading-relaxed text-gray-400">
+                        <p className="mt-2 text-sm leading-relaxed text-gray-400">
                           {exp.description}
                         </p>
                       </div>
@@ -483,11 +475,11 @@ function Contact() {
     <section id="contact" className="mx-auto max-w-6xl px-4 sm:px-6 pb-16 sm:pb-20 lg:px-10">
       <div className="grid items-center gap-8 sm:gap-10 rounded-2xl border border-line bg-panel p-5 sm:p-8 lg:grid-cols-2 lg:p-10">
         <div>
-          <p className="text-sm font-medium text-accent">Get in touch</p>
+          <p className="text-base font-medium text-accent">Get in touch</p>
           <h2 className="mt-2 font-display text-2xl font-semibold sm:text-3xl">
             Let's work together
           </h2>
-          <p className="mt-3 max-w-sm text-sm text-gray-400">
+          <p className="mt-3 max-w-sm text-base text-gray-400">
             Have a project in mind or a role to discuss? I'd like to hear about
             it.
           </p>
@@ -498,8 +490,8 @@ function Contact() {
               </div>
 
               <div className="min-w-0">
-                <p className="text-xs text-gray-500">Email</p>
-                <p className="text-sm font-medium text-white break-words">
+                <p className="text-sm text-gray-500">Email</p>
+                <p className="text-base font-medium text-white break-words">
                   Naraharashettysaiaravind@gmail.com
                 </p>
               </div>
@@ -511,8 +503,8 @@ function Contact() {
               </div>
 
               <div className="min-w-0">
-                <p className="text-xs text-gray-500">Phone</p>
-                <p className="text-sm font-medium text-white break-words">+91 7331121108</p>
+                <p className="text-sm text-gray-500">Phone</p>
+                <p className="text-base font-medium text-white break-words">+91 7331121108</p>
               </div>
             </div>
 
@@ -522,8 +514,8 @@ function Contact() {
               </div>
 
               <div className="min-w-0">
-                <p className="text-xs text-gray-500">Location</p>
-                <p className="text-sm font-medium text-white break-words">
+                <p className="text-sm text-gray-500">Location</p>
+                <p className="text-base font-medium text-white break-words">
                   Hyderabad, Telangana, India
                 </p>
               </div>
@@ -535,8 +527,8 @@ function Contact() {
               </div>
 
               <div className="min-w-0">
-                <p className="text-xs text-gray-500">Availability</p>
-                <p className="text-sm font-medium text-green-400">
+                <p className="text-sm text-gray-500">Availability</p>
+                <p className="text-base font-medium text-green-400">
                   Available for Full-Time
                 </p>
               </div>
@@ -552,7 +544,7 @@ function Contact() {
               placeholder="Your name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full min-w-0 rounded-lg border border-line bg-panel2 px-4 py-3 text-sm text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
+              className="w-full min-w-0 rounded-lg border border-line bg-panel2 px-4 py-3 text-base text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
             />
             <input
               type="email"
@@ -560,7 +552,7 @@ function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full min-w-0 rounded-lg border border-line bg-panel2 px-4 py-3 text-sm text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
+              className="w-full min-w-0 rounded-lg border border-line bg-panel2 px-4 py-3 text-base text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
             />
           </div>
           <input
@@ -569,7 +561,7 @@ function Contact() {
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            className="w-full min-w-0 rounded-lg border border-line bg-panel2 px-4 py-3 text-sm text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
+            className="w-full min-w-0 rounded-lg border border-line bg-panel2 px-4 py-3 text-base text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
           />
           <textarea
             rows={4}
@@ -577,12 +569,12 @@ function Contact() {
             value={formData.message}
             name="message"
             onChange={handleChange}
-            className="w-full min-w-0 resize-none rounded-lg border border-line bg-panel2 px-4 py-3 text-sm text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
+            className="w-full min-w-0 resize-none rounded-lg border border-line bg-panel2 px-4 py-3 text-base text-white outline-none transition-colors duration-300 placeholder:text-gray-500 focus:border-accent"
           />
           <button
             type="submit"
             disabled={loading || !isFormValid}
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-accent py-3 text-sm font-medium text-white transition-colors duration-300 hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto sm:px-8"
+            className="flex w-full items-center justify-center gap-2 rounded-lg bg-accent py-3 text-base font-medium text-white transition-colors duration-300 hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto sm:px-8"
           >
             {loading ? "Sending..." : "Send Message"}
 
@@ -629,10 +621,10 @@ function Contact() {
               {popup.success ? "Success!" : "Oops!"}
             </h3>
 
-            <p className="mt-3 text-sm leading-6 text-gray-400 break-words">
+            <p className="mt-3 text-base leading-6 text-gray-400 break-words">
               {popup.title && <span>{popup.title}</span>}
             </p>
-            <p className="mt-2 text-sm leading-6 text-gray-400 break-words">
+            <p className="mt-2 text-base leading-6 text-gray-400 break-words">
               {popup.message && <span>{popup.message}</span>}
             </p>
 
@@ -662,7 +654,7 @@ function Footer() {
             <SocialLink key={s.name} {...s} />
           ))}
         </div>
-        <p className="text-xs text-gray-500">
+        <p className="text-sm text-gray-500">
           &copy; {new Date().getFullYear()} Sai Aravind. All rights reserved.
         </p>
       </div>
