@@ -66,7 +66,7 @@ const PROJECTS = [
     description:
       "AI Translation Platform is a modern full-stack AI-powered translation application where users can translate text in real time through an intuitive messenger-style interface, supporting multiple languages with fast, accurate AI translations and a seamless, responsive user experience.",
     image: PollyGlot,
-    github: "https://github.com/your-handle/translation-studio",
+    github: "https://github.com/saiaravind203/PollyGlot",
   },
 ];
 
