@@ -5,7 +5,7 @@ import DevBlog from "../Assets/Dev_blog.png";
 import GameBlog from "../Assets/Game_blog.png";
 import PollyGlot from "../Assets/Polly_Glot.png";
 import emailjs from "@emailjs/browser";
-import { Mail, Phone, MapPin, BriefcaseBusiness } from "lucide-react";
+import { Mail, Phone, MapPin, BriefcaseBusiness, BookOpen } from "lucide-react";
 
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
@@ -72,22 +72,22 @@ const PROJECTS = [
 
 const EXPERIENCE = [
   {
-    icon: "ti-briefcase",
+    icon: BriefcaseBusiness,
     period: "Oct, 2023 \u2014 Present",
     role: "Packaged App Development Analyst",
     org: "Accenture",
     side: "left",
     description:
-      "Building and maintaining a React-based internal configuration tool for a Next.js e-commerce platform, owning JSON-based localization workflows across markets.",
+      "Currently working as a Packaged App Development Analyst at Accenture, delivering enterprise web solutions using Adobe Experience Manager (AEM), React.js, and modern frontend technologies.",
   },
   {
-    icon: "ti-code",
-    period: "2021 \u2014 2023",
-    role: "Full Stack Developer",
-    org: "Previous Company",
+    icon: BookOpen,
+    period: "May,2019 \u2014 2023",
+    role: "Bachelor of Technology in Computer Science and Engineering",
+    org: "Lovely Professional University",
     side: "right",
     description:
-      "Developed full-stack features across Java back-end services and React front ends, shipping on a two-week deployment cycle.",
+      "Completed B.Tech in Computer Science and Engineering at Lovely Professional University, gaining expertise in software engineering, programming, data structures, and full-stack development.",
   },
 ];
 
@@ -368,7 +368,7 @@ function ProjectsExperience() {
                       <div className="rounded-2xl border border-line bg-panel p-5">
                         <div className="flex items-center gap-3">
                           <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-panel2 text-accent">
-                            <i className={"ti " + exp.icon}></i>
+                            <exp.icon className="h-5 w-5" />
                           </div>
                           <div>
                             <p className="text-[11px] text-accent">
